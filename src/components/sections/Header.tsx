@@ -18,6 +18,7 @@ import {
 } from '@mui/icons-material';
 import { useThemeContext } from '../../theme';
 import type { PersonalInfo } from '../../types';
+import headerBg from '../../assets/header-bg.jpg';
 
 interface HeaderProps {
   personalInfo: PersonalInfo;
@@ -40,7 +41,7 @@ export const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
     <Box
       component="header"
       sx={{
-        backgroundImage: 'url("/images/header-bg.jpg")',
+        backgroundImage: `url(${headerBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
