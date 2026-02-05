@@ -4,7 +4,7 @@ export const resumeData: ResumeData = {
   personalInfo: {
     name: 'Paulo Fabrício de Souza Santos',
     title: 'Fullstack Developer (NodeJS / Python / React / AWS / Azure / MongoDB / PostgreSQL)',
-    location: 'Lauro de Freitas, Bahia, Brasil',
+    location: 'Brasil',
     linkedin: 'linkedin.com/in/paulofabricio',
     github: 'github.com/paulozullu',
   },
