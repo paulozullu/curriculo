@@ -4,7 +4,7 @@ export const resumeData: ResumeData = {
   personalInfo: {
     name: 'Paulo Fabrício de Souza Santos',
     title: 'Fullstack Developer (NodeJS / Python / React / AWS / Azure / MongoDB / PostgreSQL)',
-    location: 'Lauro de Freitas, Bahia, Brasil',
+    location: 'Bahia, Brasil',
     linkedin: 'linkedin.com/in/paulofabricio',
     github: 'github.com/paulozullu',
   },
@@ -17,7 +17,11 @@ Ainda em 2010, passei a atuar como Analista Desenvolvedor GIS, utilizando .NET p
 
 Em setembro de 2015 ingressei na ECMetrics, trabalhando com mineração de dados e APIs como Twitter, Facebook, YouTube e Google Places, além de ferramentas como Celery, MongoDB, Neo4j, PostgreSQL e Django. Fui responsável pelos ambientes de homologação e produção, servidores Linux, MongoDB e Neo4j, realizando otimizações e monitoramento.
 
-Em julho de 2020 iniciei na Seedz como Engenheiro de Software Sênior, trabalhando com Node.js, MongoDB, NestJS, Typescript e AWS Services (lambda, S3, SQS, SNS, Secrets), TypeORM, Prisma, Knex.JS e PostgreSQL.`,
+Ingressei na Seedz em julho de 2020 como Engenheiro de Software Sênior, trabalhando com Node.js, MongoDB, NestJS, Typescript e AWS Services (lambda, S3, SQS, SNS, Secrets), TypeORM, Prisma, Knex.JS e PostgreSQL. Era referência na funcionalidade de motor de pontos de fidelidade da empresa.
+
+Em março de 2025 fui contratado pela Spassu para atuar na Petrobras como Analista Desenvolvedor Sênior, trabalhando com React.js, Python, Node.js, TypeScript, Angular e PostgreSQL. Atuo no desenvolvimento de novas funcionalidades, manutenção e correção do simulador interno de escoamento multifásico da Petrobras.
+
+`,
 
   experiences: [
     {
@@ -29,7 +33,7 @@ Em julho de 2020 iniciei na Seedz como Engenheiro de Software Sênior, trabalhan
       duration: '11 meses',
       location: 'Brasil · Remota',
       description: [],
-      skills: ['React.js', 'Python', 'NodeJS', 'TypeScript', 'AWS'],
+      skills: ['React.js', 'Python', 'NodeJS', 'TypeScript', 'AWS', 'Angular', 'PostgreSQL'],
     },
     {
       id: 'exp-2',

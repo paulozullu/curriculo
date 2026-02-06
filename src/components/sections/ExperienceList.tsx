@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Card, CardContent, useTheme } from '@mui/material';
 import { Work } from '@mui/icons-material';
 import { SectionTitle, SkillChips } from '../common';
+import { useLanguage, translations } from '../../i18n';
 import type { Experience } from '../../types';
 
 interface ExperienceListProps {
@@ -10,6 +11,8 @@ interface ExperienceListProps {
 
 export const ExperienceList: React.FC<ExperienceListProps> = ({ experiences }) => {
   const theme = useTheme();
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const renderNestedRole = (role: Omit<Experience, 'company' | 'isNested' | 'nestedRoles'>) => (
     <Box
@@ -161,7 +164,7 @@ export const ExperienceList: React.FC<ExperienceListProps> = ({ experiences }) =
 
   return (
     <Box component="section" sx={{ mb: 6 }}>
-      <SectionTitle title="Experiência Profissional" icon={<Work fontSize="large" />} />
+      <SectionTitle title={t.professionalExperience} icon={<Work fontSize="large" />} />
       {experiences.map(renderExperience)}
     </Box>
   );

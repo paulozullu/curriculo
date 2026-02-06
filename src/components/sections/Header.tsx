@@ -17,8 +17,11 @@ import {
   LocationOn,
 } from '@mui/icons-material';
 import { useThemeContext } from '../../theme';
+import { useLanguage, translations } from '../../i18n';
+import { LanguageSelector } from '../common';
 import type { PersonalInfo } from '../../types';
 import headerBg from '../../assets/header-bg.jpg';
+
 
 interface HeaderProps {
   personalInfo: PersonalInfo;
@@ -27,6 +30,8 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
   const theme = useTheme();
   const { mode, toggleTheme } = useThemeContext();
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const getInitials = (name: string) => {
     return name
@@ -67,9 +72,12 @@ export const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
           sx={{
             display: 'flex',
             justifyContent: 'flex-end',
+            alignItems: 'center',
+            gap: 2,
             mb: 2,
           }}
         >
+          <LanguageSelector />
           <IconButton
             onClick={toggleTheme}
             sx={{
@@ -79,7 +87,7 @@ export const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
                 backgroundColor: 'rgba(255, 255, 255, 0.2)',
               },
             }}
-            aria-label="Alternar tema"
+            aria-label={t.toggleTheme}
           >
             {mode === 'dark' ? <LightMode /> : <DarkMode />}
           </IconButton>

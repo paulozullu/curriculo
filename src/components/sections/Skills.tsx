@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Grid, Typography, Paper, useTheme } from '@mui/material';
 import { Code } from '@mui/icons-material';
 import { SectionTitle, SkillChips } from '../common';
+import { useLanguage, translations } from '../../i18n';
 import type { SkillCategory } from '../../types';
 
 interface SkillsProps {
@@ -10,10 +11,12 @@ interface SkillsProps {
 
 export const Skills: React.FC<SkillsProps> = ({ skillCategories }) => {
   const theme = useTheme();
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
     <Box component="section" sx={{ mb: 6 }}>
-      <SectionTitle title="Competências" icon={<Code fontSize="large" />} />
+      <SectionTitle title={t.skills} icon={<Code fontSize="large" />} />
 
       <Grid container spacing={3}>
         {skillCategories.map((category, index) => (

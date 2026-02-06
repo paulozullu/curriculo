@@ -1,10 +1,13 @@
 import React from 'react';
 import { Box, Container, Typography, useTheme } from '@mui/material';
 import { Favorite } from '@mui/icons-material';
+import { useLanguage, translations } from '../../i18n';
 
 export const Footer: React.FC = () => {
   const theme = useTheme();
   const currentYear = new Date().getFullYear();
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
     <Box
@@ -30,9 +33,9 @@ export const Footer: React.FC = () => {
             gap: 0.5,
           }}
         >
-          © {currentYear} • Feito com
+          © {currentYear} • {t.madeWith}
           <Favorite sx={{ fontSize: 16, color: theme.palette.primary.main }} />
-          usando React & Material UI
+          {t.usingReactMUI}
         </Typography>
       </Container>
     </Box>

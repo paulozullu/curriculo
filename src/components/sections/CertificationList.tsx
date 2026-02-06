@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import { VerifiedUser, ExpandMore, ExpandLess } from '@mui/icons-material';
 import { SectionTitle, SkillChips } from '../common';
+import { useLanguage, translations } from '../../i18n';
 import type { Certification } from '../../types';
 
 interface CertificationListProps {
@@ -22,16 +23,19 @@ const INITIAL_DISPLAY_COUNT = 6;
 export const CertificationList: React.FC<CertificationListProps> = ({ certifications }) => {
   const theme = useTheme();
   const [expanded, setExpanded] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const displayedCertifications = expanded
     ? certifications
     : certifications.slice(0, INITIAL_DISPLAY_COUNT);
 
   const hasMore = certifications.length > INITIAL_DISPLAY_COUNT;
+  const remainingCount = certifications.length - INITIAL_DISPLAY_COUNT;
 
   return (
     <Box component="section" sx={{ mb: 6 }}>
-      <SectionTitle title="Certificações" icon={<VerifiedUser fontSize="large" />} />
+      <SectionTitle title={t.certifications} icon={<VerifiedUser fontSize="large" />} />
 
       <Grid container spacing={3}>
         {displayedCertifications.map((cert) => (
@@ -107,8 +111,8 @@ export const CertificationList: React.FC<CertificationListProps> = ({ certificat
             }}
           >
             {expanded
-              ? 'Mostrar menos'
-              : `Ver mais ${certifications.length - INITIAL_DISPLAY_COUNT} certificações`}
+              ? t.showLess
+              : t.showMoreCertifications.replace('{count}', String(remainingCount))}
           </Button>
         </Box>
       )}

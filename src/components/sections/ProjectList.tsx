@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Grid, Card, CardContent, Typography, useTheme } from '@mui/material';
 import { Folder } from '@mui/icons-material';
 import { SectionTitle, SkillChips } from '../common';
+import { useLanguage, translations } from '../../i18n';
 import type { Project } from '../../types';
 
 interface ProjectListProps {
@@ -10,10 +11,12 @@ interface ProjectListProps {
 
 export const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
   const theme = useTheme();
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
     <Box component="section" sx={{ mb: 6 }}>
-      <SectionTitle title="Projetos" icon={<Folder fontSize="large" />} />
+      <SectionTitle title={t.projects} icon={<Folder fontSize="large" />} />
 
       <Grid container spacing={3}>
         {projects.map((project) => (

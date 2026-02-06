@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, useTheme, Paper } from '@mui/material';
 import { Person } from '@mui/icons-material';
 import { SectionTitle } from '../common';
+import { useLanguage, translations } from '../../i18n';
 
 interface SummaryProps {
   summary: string;
@@ -9,12 +10,14 @@ interface SummaryProps {
 
 export const Summary: React.FC<SummaryProps> = ({ summary }) => {
   const theme = useTheme();
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const paragraphs = summary.split('\n\n');
 
   return (
     <Box component="section" sx={{ mb: 6 }}>
-      <SectionTitle title="Sobre Mim" icon={<Person fontSize="large" />} />
+      <SectionTitle title={t.aboutMe} icon={<Person fontSize="large" />} />
 
       <Paper
         elevation={0}

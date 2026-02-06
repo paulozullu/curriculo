@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Grid, Card, CardContent, Typography, useTheme } from '@mui/material';
 import { School } from '@mui/icons-material';
 import { SectionTitle } from '../common';
+import { useLanguage, translations } from '../../i18n';
 import type { Education } from '../../types';
 
 interface EducationListProps {
@@ -10,10 +11,12 @@ interface EducationListProps {
 
 export const EducationList: React.FC<EducationListProps> = ({ education }) => {
   const theme = useTheme();
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
     <Box component="section" sx={{ mb: 6 }}>
-      <SectionTitle title="Formação Acadêmica" icon={<School fontSize="large" />} />
+      <SectionTitle title={t.education} icon={<School fontSize="large" />} />
 
       <Grid container spacing={3}>
         {education.map((edu) => (
