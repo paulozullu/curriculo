@@ -1,1 +1,0 @@
-export { ResumeLayout } from './ResumeLayout';
