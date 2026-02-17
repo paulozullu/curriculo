@@ -3,7 +3,8 @@ import type { ResumeData } from '../types';
 export const resumeData: ResumeData = {
   personalInfo: {
     name: 'Paulo Fabrício de Souza Santos',
-    title: 'Fullstack Developer (NodeJS / Python / React / AWS / Azure / MongoDB / PostgreSQL)',
+    title:
+      'Fullstack Developer (NodeJS / Python / React / AWS / Azure / MongoDB / PostgreSQL)',
     location: 'Bahia, Brasil',
     linkedin: 'linkedin.com/in/paulofabricio',
     github: 'github.com/paulozullu',
@@ -33,7 +34,15 @@ Em março de 2025 fui contratado pela Spassu para atuar na Petrobras como Analis
       duration: '11 meses',
       location: 'Brasil · Remota',
       description: [],
-      skills: ['React.js', 'Python', 'NodeJS', 'TypeScript', 'AWS', 'Angular', 'PostgreSQL'],
+      skills: [
+        'React.js',
+        'Python',
+        'NodeJS',
+        'TypeScript',
+        'AWS',
+        'Angular',
+        'PostgreSQL',
+      ],
     },
     {
       id: 'exp-2',
@@ -70,7 +79,16 @@ Em março de 2025 fui contratado pela Spassu para atuar na Petrobras como Analis
             'Uso de vários recursos da biblioteca aws-sdk como S3, IAM, SQS, SNS',
             'Uso de lambdas na AWS',
           ],
-          skills: ['Revisão de código', 'MongoDB', 'NestJS', 'TypeScript', 'Node.js', 'AWS', 'Prisma', 'TypeORM'],
+          skills: [
+            'Revisão de código',
+            'MongoDB',
+            'NestJS',
+            'TypeScript',
+            'Node.js',
+            'AWS',
+            'Prisma',
+            'TypeORM',
+          ],
         },
         {
           id: 'exp-3-2',
@@ -85,7 +103,16 @@ Em março de 2025 fui contratado pela Spassu para atuar na Petrobras como Analis
             'Uso do AWS CDK para implementação de sagas com step functions',
             'Criação de microsserviço em NestJS consumindo banco Redshift através do Knex.js',
           ],
-          skills: ['Revisão de código', 'Scrum', 'MongoDB', 'NestJS', 'TypeScript', 'Node.js', 'AWS', 'Knex.js'],
+          skills: [
+            'Revisão de código',
+            'Scrum',
+            'MongoDB',
+            'NestJS',
+            'TypeScript',
+            'Node.js',
+            'AWS',
+            'Knex.js',
+          ],
         },
       ],
     },
@@ -108,7 +135,17 @@ Em março de 2025 fui contratado pela Spassu para atuar na Petrobras como Analis
         'Upgrade e update dos servidores Linux, otimização, monitoramento e criação de serviços',
         'Responsável pelo servidor de banco de dados MongoDB e Neo4j',
       ],
-      skills: ['Python', 'Django', 'MongoDB', 'Neo4j', 'PostgreSQL', 'Celery', 'Linux', 'Scrapy', 'jQuery'],
+      skills: [
+        'Python',
+        'Django',
+        'MongoDB',
+        'Neo4j',
+        'PostgreSQL',
+        'Celery',
+        'Linux',
+        'Scrapy',
+        'jQuery',
+      ],
     },
     {
       id: 'exp-5',
@@ -134,7 +171,15 @@ Em março de 2025 fui contratado pela Spassu para atuar na Petrobras como Analis
             'Uso da API do Google Earth para exibir mapas no plugin do Google Earth',
             'Uso de Ext.Net para a interface do sistema',
           ],
-          skills: ['Python', 'C#.NET', 'JavaScript', 'ArcGIS', 'Google Earth API', 'Ext.NET', 'SQL Server'],
+          skills: [
+            'Python',
+            'C#.NET',
+            'JavaScript',
+            'ArcGIS',
+            'Google Earth API',
+            'Ext.NET',
+            'SQL Server',
+          ],
         },
         {
           id: 'exp-5-2',
@@ -210,9 +255,17 @@ Em março de 2025 fui contratado pela Spassu para atuar na Petrobras como Analis
       id: 'edu-3',
       institution: 'UNIVERSIDADE GAMA FILHO',
       degree: 'Pós Graduação',
-      field: 'Gestão de Tecnologia da Informação com Ênfase em Engenharia de Software',
+      field:
+        'Gestão de Tecnologia da Informação com Ênfase em Engenharia de Software',
       period: '2009',
       status: 'Pendente o Projeto Final',
+    },
+    {
+      id: 'edu-4',
+      institution: 'C.C.A.A.',
+      degree: '',
+      field: 'Curso de Inglês',
+      period: '1987-1996',
     },
   ],
 
@@ -366,8 +419,29 @@ Em março de 2025 fui contratado pela Spassu para atuar na Petrobras como Analis
       id: 'proj-1',
       name: 'Meu Roteiro',
       period: 'nov de 2025 - jan de 2026',
-      description: 'Backend de app mobile para iOS e Android. Uso da API da OpenAI para gerar roteiros de viagem personalizados, sugestões de destinos, checklist de bagagem e orçamento.',
-      skills: ['NestJS', 'MySQL', 'TypeORM', 'Redis', 'DDD', 'Apple Login', 'API Google Places', 'API da OpenAI', 'ChatGPT'],
+      description:
+        'Backend de app mobile para iOS e Android. Uso da API da OpenAI para gerar roteiros de viagem personalizados, sugestões de destinos, checklist de bagagem e orçamento.',
+      skills: [
+        'NestJS',
+        'MySQL',
+        'TypeORM',
+        'Redis',
+        'DDD',
+        'Apple Login',
+        'API Google Places',
+        'API da OpenAI',
+        'ChatGPT',
+      ],
+      urls: [
+        {
+          label: 'Android',
+          url: 'https://play.google.com/store/apps/details?id=com.djptechnology.meuroteiro',
+        },
+        {
+          label: 'iOS',
+          url: 'https://apps.apple.com/br/app/meu-roteiro/id6755321074',
+        },
+      ],
     },
     {
       id: 'proj-2',
@@ -375,28 +449,55 @@ Em março de 2025 fui contratado pela Spassu para atuar na Petrobras como Analis
       period: 'ago de 2025 - nov de 2025',
       description: 'Backend de app mobile para iOS e Android.',
       skills: ['NestJS', 'MySQL', 'TypeORM', 'Redis', 'DDD', 'Apple Login'],
+      urls: [
+        {
+          label: 'Android',
+          url: 'https://play.google.com/store/apps/details?id=com.djptechnology.financasnamao',
+        },
+        {
+          label: 'iOS',
+          url: 'https://apps.apple.com/br/app/finan%C3%A7as-na-m%C3%A3o/id6753323643',
+        },
+      ],
     },
     {
       id: 'proj-3',
       name: 'Wopik',
       period: 'set de 2015 - jul de 2020',
       association: 'eCMetrics',
-      description: 'Plataforma de mineração de dados e análise de mídias sociais.',
-      skills: ['Python', 'Django', 'MongoDB', 'Neo4j', 'Celery', 'APIs de Redes Sociais'],
+      description:
+        'Plataforma de mineração de dados e análise de mídias sociais.',
+      skills: [
+        'Python',
+        'Django',
+        'MongoDB',
+        'Neo4j',
+        'Celery',
+        'APIs de Redes Sociais',
+      ],
     },
     {
       id: 'proj-4',
       name: 'Diversos Sistemas de Informação Geográfica (GIS) para a Engenharia e Gás & Energia (Petrobras)',
       period: '2010 - 2015',
-      description: 'Codificação em C#.NET e Javascript, utilização de ArcObjects como interação entre o ArcGIS Server e a aplicação, da API do Google Earth para exibição de mapas no plugin do Google Earth e de Ext.Net para a interface do sistema.',
-      skills: ['HTML', 'C#.NET', 'JavaScript', 'Ext.NET', 'ArcGIS', 'Google Earth API'],
+      description:
+        'Codificação em C#.NET e Javascript, utilização de ArcObjects como interação entre o ArcGIS Server e a aplicação, da API do Google Earth para exibição de mapas no plugin do Google Earth e de Ext.Net para a interface do sistema.',
+      skills: [
+        'HTML',
+        'C#.NET',
+        'JavaScript',
+        'Ext.NET',
+        'ArcGIS',
+        'Google Earth API',
+      ],
     },
     {
       id: 'proj-5',
       name: 'SOPM - Sistemas de Ocorrências da Polícia Militar da Bahia',
       period: '2006',
       association: 'UNIV. CATÓLICA DO SALVADOR - UCSAL',
-      description: 'Projeto de conclusão de curso com nota 10,00 (dez). O projeto consistia em implementar os erros e exceções da aplicação utilizando a POA (Programação Orientada a Aspectos).',
+      description:
+        'Projeto de conclusão de curso com nota 10,00 (dez). O projeto consistia em implementar os erros e exceções da aplicação utilizando a POA (Programação Orientada a Aspectos).',
       skills: ['Java', 'JSTL', 'Firebird', 'Hibernate', 'Tomcat', 'AspectJ'],
     },
   ],
@@ -404,11 +505,26 @@ Em março de 2025 fui contratado pela Spassu para atuar na Petrobras como Analis
   skillCategories: [
     {
       category: 'Linguagens de Programação',
-      skills: ['JavaScript', 'TypeScript', 'Python', 'Java', 'C#', 'Delphi', 'SQL'],
+      skills: [
+        'JavaScript',
+        'TypeScript',
+        'Python',
+        'Java',
+        'C#',
+        'Delphi',
+        'SQL',
+      ],
     },
     {
       category: 'Backend',
-      skills: ['Node.js', 'NestJS', 'Express', 'Django', 'Flask', 'Spring Framework'],
+      skills: [
+        'Node.js',
+        'NestJS',
+        'Express',
+        'Django',
+        'Flask',
+        'Spring Framework',
+      ],
     },
     {
       category: 'Frontend',
@@ -416,23 +532,57 @@ Em março de 2025 fui contratado pela Spassu para atuar na Petrobras como Analis
     },
     {
       category: 'Bancos de Dados',
-      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Neo4j', 'SQL Server', 'Redis', 'Redshift'],
+      skills: [
+        'MongoDB',
+        'PostgreSQL',
+        'MySQL',
+        'Neo4j',
+        'SQL Server',
+        'Redis',
+        'Redshift',
+      ],
     },
     {
       category: 'Cloud & DevOps',
-      skills: ['AWS (Lambda, S3, SQS, SNS, CDK, Secrets)', 'Docker', 'Linux', 'CI/CD'],
+      skills: [
+        'AWS (Lambda, S3, SQS, SNS, CDK, Secrets)',
+        'Docker',
+        'Linux',
+        'CI/CD',
+      ],
     },
     {
       category: 'Arquitetura & Padrões',
-      skills: ['Microservices', 'DDD', 'SOLID', 'Design Patterns', 'Event Driven Architecture', 'REST API'],
+      skills: [
+        'Microservices',
+        'DDD',
+        'SOLID',
+        'Design Patterns',
+        'Event Driven Architecture',
+        'REST API',
+      ],
     },
     {
       category: 'Ferramentas & ORMs',
-      skills: ['Prisma', 'TypeORM', 'Knex.js', 'Mongoose', 'Hibernate', 'Celery'],
+      skills: [
+        'Prisma',
+        'TypeORM',
+        'Knex.js',
+        'Mongoose',
+        'Hibernate',
+        'Celery',
+      ],
     },
     {
       category: 'GIS & Dados',
-      skills: ['ArcGIS', 'ArcObjects', 'Google Earth API', 'Google Maps API', 'Scrapy', 'Dremio'],
+      skills: [
+        'ArcGIS',
+        'ArcObjects',
+        'Google Earth API',
+        'Google Maps API',
+        'Scrapy',
+        'Dremio',
+      ],
     },
     {
       category: 'Metodologias',

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Grid, Card, CardContent, Typography, useTheme } from '@mui/material';
-import { Folder } from '@mui/icons-material';
+import { Box, Grid, Card, CardContent, Typography, Link, useTheme } from '@mui/material';
+import { Folder, OpenInNew } from '@mui/icons-material';
 import { SectionTitle, SkillChips } from '../common';
 import { useLanguage, translations } from '../../i18n';
 import type { Project } from '../../types';
@@ -68,6 +68,33 @@ export const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                 >
                   {project.description}
                 </Typography>
+
+                {project.urls && project.urls.length > 0 && (
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.5, mb: 2 }}>
+                    {project.urls.map((link, index) => (
+                      <Link
+                        key={index}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: 0.5,
+                          fontSize: '0.85rem',
+                          textDecoration: 'none',
+                          color: theme.palette.primary.main,
+                          '&:hover': {
+                            textDecoration: 'underline',
+                          },
+                        }}
+                      >
+                        <OpenInNew sx={{ fontSize: '1rem' }} />
+                        {link.label}
+                      </Link>
+                    ))}
+                  </Box>
+                )}
 
                 {project.skills.length > 0 && (
                   <SkillChips skills={project.skills} />

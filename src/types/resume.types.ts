@@ -30,6 +30,11 @@ export interface Certification {
   skills: string[];
 }
 
+export interface ProjectUrl {
+  label: string;
+  url: string;
+}
+
 export interface Project {
   id: string;
   name: string;
@@ -37,6 +42,7 @@ export interface Project {
   association?: string;
   description: string;
   skills: string[];
+  urls?: ProjectUrl[];
 }
 
 export interface SkillCategory {

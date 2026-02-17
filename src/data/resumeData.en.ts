@@ -3,7 +3,8 @@ import type { ResumeData } from '../types';
 export const resumeDataEn: ResumeData = {
   personalInfo: {
     name: 'Paulo Fabrício de Souza Santos',
-    title: 'Fullstack Developer (NodeJS / Python / React / AWS / Azure / MongoDB / PostgreSQL)',
+    title:
+      'Fullstack Developer (NodeJS / Python / React / AWS / Azure / MongoDB / PostgreSQL)',
     location: 'Bahia, Brazil',
     linkedin: 'linkedin.com/in/paulofabricio',
     github: 'github.com/paulozullu',
@@ -68,7 +69,16 @@ In March 2025, I was hired by Spassu to work at Petrobras as a Senior Developer 
             'Use of various aws-sdk library resources like S3, IAM, SQS, SNS',
             'Use of AWS lambdas',
           ],
-          skills: ['Code Review', 'MongoDB', 'NestJS', 'TypeScript', 'Node.js', 'AWS', 'Prisma', 'TypeORM'],
+          skills: [
+            'Code Review',
+            'MongoDB',
+            'NestJS',
+            'TypeScript',
+            'Node.js',
+            'AWS',
+            'Prisma',
+            'TypeORM',
+          ],
         },
         {
           id: 'exp-3-2',
@@ -83,7 +93,16 @@ In March 2025, I was hired by Spassu to work at Petrobras as a Senior Developer 
             'Use of AWS CDK for saga implementation with step functions',
             'Creation of NestJS microservice consuming Redshift database through Knex.js',
           ],
-          skills: ['Code Review', 'Scrum', 'MongoDB', 'NestJS', 'TypeScript', 'Node.js', 'AWS', 'Knex.js'],
+          skills: [
+            'Code Review',
+            'Scrum',
+            'MongoDB',
+            'NestJS',
+            'TypeScript',
+            'Node.js',
+            'AWS',
+            'Knex.js',
+          ],
         },
       ],
     },
@@ -106,7 +125,17 @@ In March 2025, I was hired by Spassu to work at Petrobras as a Senior Developer 
         'Linux server upgrade and update, optimization, monitoring, and service creation',
         'Responsible for MongoDB and Neo4j database server',
       ],
-      skills: ['Python', 'Django', 'MongoDB', 'Neo4j', 'PostgreSQL', 'Celery', 'Linux', 'Scrapy', 'jQuery'],
+      skills: [
+        'Python',
+        'Django',
+        'MongoDB',
+        'Neo4j',
+        'PostgreSQL',
+        'Celery',
+        'Linux',
+        'Scrapy',
+        'jQuery',
+      ],
     },
     {
       id: 'exp-5',
@@ -132,7 +161,15 @@ In March 2025, I was hired by Spassu to work at Petrobras as a Senior Developer 
             'Using Google Earth API to display maps in Google Earth plugin',
             'Using Ext.Net for system interface',
           ],
-          skills: ['Python', 'C#.NET', 'JavaScript', 'ArcGIS', 'Google Earth API', 'Ext.NET', 'SQL Server'],
+          skills: [
+            'Python',
+            'C#.NET',
+            'JavaScript',
+            'ArcGIS',
+            'Google Earth API',
+            'Ext.NET',
+            'SQL Server',
+          ],
         },
         {
           id: 'exp-5-2',
@@ -211,6 +248,13 @@ In March 2025, I was hired by Spassu to work at Petrobras as a Senior Developer 
       field: 'IT Management with Emphasis on Software Engineering',
       period: '2009',
       status: 'Final Project Pending',
+    },
+    {
+      id: 'edu-4',
+      institution: 'C.C.A.A.',
+      degree: '',
+      field: 'English Language',
+      period: '1987-1996',
     },
   ],
 
@@ -364,8 +408,29 @@ In March 2025, I was hired by Spassu to work at Petrobras as a Senior Developer 
       id: 'proj-1',
       name: 'Meu Roteiro (My Itinerary)',
       period: 'Nov 2025 - Jan 2026',
-      description: 'Mobile app backend for iOS and Android. Using OpenAI API to generate personalized travel itineraries, destination suggestions, luggage checklist, and budget.',
-      skills: ['NestJS', 'MySQL', 'TypeORM', 'Redis', 'DDD', 'Apple Login', 'Google Places API', 'OpenAI API', 'ChatGPT'],
+      description:
+        'Mobile app backend for iOS and Android. Using OpenAI API to generate personalized travel itineraries, destination suggestions, luggage checklist, and budget.',
+      skills: [
+        'NestJS',
+        'MySQL',
+        'TypeORM',
+        'Redis',
+        'DDD',
+        'Apple Login',
+        'Google Places API',
+        'OpenAI API',
+        'ChatGPT',
+      ],
+      urls: [
+        {
+          label: 'Android',
+          url: 'https://play.google.com/store/apps/details?id=com.djptechnology.meuroteiro',
+        },
+        {
+          label: 'iOS',
+          url: 'https://apps.apple.com/br/app/meu-roteiro/id6755321074',
+        },
+      ],
     },
     {
       id: 'proj-2',
@@ -373,6 +438,16 @@ In March 2025, I was hired by Spassu to work at Petrobras as a Senior Developer 
       period: 'Aug 2025 - Nov 2025',
       description: 'Mobile app backend for iOS and Android.',
       skills: ['NestJS', 'MySQL', 'TypeORM', 'Redis', 'DDD', 'Apple Login'],
+      urls: [
+        {
+          label: 'Android',
+          url: 'https://play.google.com/store/apps/details?id=com.djptechnology.financasnamao',
+        },
+        {
+          label: 'iOS',
+          url: 'https://apps.apple.com/br/app/finan%C3%A7as-na-m%C3%A3o/id6753323643',
+        },
+      ],
     },
     {
       id: 'proj-3',
@@ -380,21 +455,37 @@ In March 2025, I was hired by Spassu to work at Petrobras as a Senior Developer 
       period: 'Sep 2015 - Jul 2020',
       association: 'eCMetrics',
       description: 'Data mining and social media analysis platform.',
-      skills: ['Python', 'Django', 'MongoDB', 'Neo4j', 'Celery', 'Social Media APIs'],
+      skills: [
+        'Python',
+        'Django',
+        'MongoDB',
+        'Neo4j',
+        'Celery',
+        'Social Media APIs',
+      ],
     },
     {
       id: 'proj-4',
       name: 'Various Geographic Information Systems (GIS) for Engineering and Gas & Energy (Petrobras)',
       period: '2010 - 2015',
-      description: 'Coding in C#.NET and JavaScript, using ArcObjects as interaction between ArcGIS Server and the application, Google Earth API for map display in Google Earth plugin, and Ext.Net for system interface.',
-      skills: ['HTML', 'C#.NET', 'JavaScript', 'Ext.NET', 'ArcGIS', 'Google Earth API'],
+      description:
+        'Coding in C#.NET and JavaScript, using ArcObjects as interaction between ArcGIS Server and the application, Google Earth API for map display in Google Earth plugin, and Ext.Net for system interface.',
+      skills: [
+        'HTML',
+        'C#.NET',
+        'JavaScript',
+        'Ext.NET',
+        'ArcGIS',
+        'Google Earth API',
+      ],
     },
     {
       id: 'proj-5',
       name: 'SOPM - Bahia Military Police Incident System',
       period: '2006',
       association: 'CATHOLIC UNIVERSITY OF SALVADOR - UCSAL',
-      description: 'Final course project with a grade of 10.00 (ten). The project consisted of implementing application errors and exceptions using AOP (Aspect-Oriented Programming).',
+      description:
+        'Final course project with a grade of 10.00 (ten). The project consisted of implementing application errors and exceptions using AOP (Aspect-Oriented Programming).',
       skills: ['Java', 'JSTL', 'Firebird', 'Hibernate', 'Tomcat', 'AspectJ'],
     },
   ],
@@ -402,11 +493,26 @@ In March 2025, I was hired by Spassu to work at Petrobras as a Senior Developer 
   skillCategories: [
     {
       category: 'Programming Languages',
-      skills: ['JavaScript', 'TypeScript', 'Python', 'Java', 'C#', 'Delphi', 'SQL'],
+      skills: [
+        'JavaScript',
+        'TypeScript',
+        'Python',
+        'Java',
+        'C#',
+        'Delphi',
+        'SQL',
+      ],
     },
     {
       category: 'Backend',
-      skills: ['Node.js', 'NestJS', 'Express', 'Django', 'Flask', 'Spring Framework'],
+      skills: [
+        'Node.js',
+        'NestJS',
+        'Express',
+        'Django',
+        'Flask',
+        'Spring Framework',
+      ],
     },
     {
       category: 'Frontend',
@@ -414,23 +520,57 @@ In March 2025, I was hired by Spassu to work at Petrobras as a Senior Developer 
     },
     {
       category: 'Databases',
-      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Neo4j', 'SQL Server', 'Redis', 'Redshift'],
+      skills: [
+        'MongoDB',
+        'PostgreSQL',
+        'MySQL',
+        'Neo4j',
+        'SQL Server',
+        'Redis',
+        'Redshift',
+      ],
     },
     {
       category: 'Cloud & DevOps',
-      skills: ['AWS (Lambda, S3, SQS, SNS, CDK, Secrets)', 'Docker', 'Linux', 'CI/CD'],
+      skills: [
+        'AWS (Lambda, S3, SQS, SNS, CDK, Secrets)',
+        'Docker',
+        'Linux',
+        'CI/CD',
+      ],
     },
     {
       category: 'Architecture & Patterns',
-      skills: ['Microservices', 'DDD', 'SOLID', 'Design Patterns', 'Event Driven Architecture', 'REST API'],
+      skills: [
+        'Microservices',
+        'DDD',
+        'SOLID',
+        'Design Patterns',
+        'Event Driven Architecture',
+        'REST API',
+      ],
     },
     {
       category: 'Tools & ORMs',
-      skills: ['Prisma', 'TypeORM', 'Knex.js', 'Mongoose', 'Hibernate', 'Celery'],
+      skills: [
+        'Prisma',
+        'TypeORM',
+        'Knex.js',
+        'Mongoose',
+        'Hibernate',
+        'Celery',
+      ],
     },
     {
       category: 'GIS & Data',
-      skills: ['ArcGIS', 'ArcObjects', 'Google Earth API', 'Google Maps API', 'Scrapy', 'Dremio'],
+      skills: [
+        'ArcGIS',
+        'ArcObjects',
+        'Google Earth API',
+        'Google Maps API',
+        'Scrapy',
+        'Dremio',
+      ],
     },
     {
       category: 'Methodologies',
